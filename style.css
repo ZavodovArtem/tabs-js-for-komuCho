@@ -1,0 +1,474 @@
+body {
+    font-family: 'Neucha', cursive;
+    font-family: 'Nunito', sans-serif;
+}
+:root {
+    --color-night: #150905;
+    --color-orange: #D77E2A;
+    
+    --txt-color-pink: #FFD8D8;
+
+    --font-basic: 'Nunito', sans-serif;
+    --font-h1: 'Neucha', cursive;
+}
+.page {
+    font-family: var(--font-basic);
+    background-color: var(--color-night);
+    color: var(--txt-color-pink);
+    margin: 0px;
+    padding: 0px;
+}
+.container {
+    width: 1140px;
+    margin: auto;
+}
+.d-flex {
+    display: flex;
+}
+.jc-sb {
+    justify-content: space-between;
+}
+.aic {
+    align-items: center;
+}
+.border {                                           /*класс для разделительной полосы*/
+    border-bottom: 2px solid var(--color-orange);
+    position: static;
+    z-index: 1  ;
+}
+.header__p--menu {                                         /*Модификатор для P в хедере*/
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+}
+
+.header__list a {                                        /* меню */
+    color: var(--txt-color-pink);
+    text-decoration: none;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 27px;
+}
+.header__navigation--point {                    /*пункты меню*/
+    list-style: none;
+    margin-right: 50px;
+}
+.header__time--ml16 {                               /*время по центру с 9.00 - 22.00*/
+    margin-left: 16px;
+}
+.banner {                                            /*блок первого section*/
+    height: 700px;
+    align-items: center;
+    overflow: hidden;
+}
+.banner__content {                                          /*блок с заголовком и с кнопкой "Заказать"*/
+    position: relative;
+    width: 386px;
+    right: 600px;
+    bottom: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.banner__content--h1 {                                       /*Заголовок в первом section*/
+    font-family: var(--font-h1);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 64px;
+    line-height: 70px;
+    position: relative;
+    left: 20px;
+}
+.banner__order {                                                        /*Кнопка заказать, индивидульаные свойства*/
+    width: 250px;
+    height: 72px;   
+    font-family: var(--font-basic);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 50px;
+    letter-spacing: 0.03em;
+    position: relative;
+    top: 28px;
+}
+.btn {                                                               /*общие свойства кнопки*/
+    border: 2px solid var(--txt-color-pink);
+    box-sizing: border-box;
+    justify-content: center;
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    color: var(--txt-color-pink);
+    text-decoration: none;
+}
+.banner__drop {                                                      /*фоновое изображение для картинок с едой*/
+    position: relative;
+    /* z-index: 1; */
+    right: 600px;
+    bottom: 70px;    
+}
+.banner__eat {                                                               /*картинка с едой*/
+    position: relative;
+    /* z-index: 2; */
+    right: 1200px;
+    top: 50px;
+}
+
+.menu__name--p {                                                /*заголовок меню*/
+    border: none;
+    border-bottom: 2px solid var(--color-orange);
+    width: 100px;
+    font-family: var(--font-basic);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 33px;
+    text-align: center;
+    margin-left: 36px;
+}
+.menu__list {                                       /*блок с переключением меню*/
+    justify-content: center;
+    list-style: none;
+}
+.menu__list--point {                                    /*пункт меню*/
+    text-decoration: none;
+    color: var(--txt-color-pink);
+    font-family: var(--font-basic);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 33px;
+    margin-right: 34px;
+}
+.menu__list--border {                                       /*рамка для пункта меню*/
+    border: 1px solid var(--color-orange);
+    border-radius: 6px;
+    width: 120px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.menu__rules {
+    justify-content: center; 
+    display: flex;
+}
+.menu__rules--text {
+    font-family: var(--font-basic);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+    color: var(--txt-color-pink);
+}
+.menu__content {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 30px;
+    margin-bottom: 50px;
+}
+.menu__product {
+    width: 350px;
+}
+.menu__product--img {
+    width: 350px;
+}
+.menu__product-name {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+.menu__product--text {
+    font-family: var(--font-basic);
+    font-style: normal;
+    font-weight: 400px;
+    font-size: 32px;
+    line-height: 44px;
+    color: var(--txt-color-pink);
+}
+.menu__description {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.menu__description-left {
+    width: 160px;
+}
+.menu__description-left--components {
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+    color: var(--txt-color-pink);
+}
+.menu__description-right {
+    width: 95px;
+}
+.menu__description-right--pay {
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 44px;
+    color: var(--txt-color-pink);
+
+}
+.delivery__left {
+    width: 540px;
+
+}
+.delivery__full {
+    margin-bottom: 100px;
+}
+.delivery__name--p {                                                /*заголовок доставки*/
+    border: none;
+    border-bottom: 2px solid var(--color-orange);
+    width: 130px;
+    font-family: var(--font-basic);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 33px;
+    text-align: center;
+    margin-left: 36px;
+    color: var(--txt-color-pink);
+}
+.delivery__left-name {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.delivery__left-name--heading {
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 44px;
+    color: var(--txt-color-pink);
+}
+.delivery__left-description--p {
+    color: var(--txt-color-pink);
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 27px;
+}
+.delivery__left-description {
+    display: flex;
+    margin-bottom: 20px;
+}
+.delivery__right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* margin-top: 100px; */
+}
+.delivery__right--p {
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 49px;
+    text-align: center;
+    color: var(--txt-color-pink);
+}
+.about__name--p {                                                /*заголовок доставки*/
+    border: none;
+    border-bottom: 2px solid var(--color-orange);
+    width: 100px;
+    font-family: var(--font-basic);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 33px;
+    text-align: center;
+    margin-left: 36px;
+    color: var(--txt-color-pink);
+}
+.about__welcome {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.about__welcome--h {
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 49px;
+    color: var(--txt-color-pink);
+}
+.about__content--img {
+    border-radius: 6px;
+}
+.about__info {
+    display: flex;
+    align-items: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.about__info--p {
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 33px;
+    color: var(--txt-color-pink);
+}
+.contacts__name--p {                                                /*заголовок доставки*/
+    border: none;
+    border-bottom: 2px solid var(--color-orange);
+    width: 130px;
+    font-family: var(--font-basic);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 33px;
+    text-align: center;
+    margin-left: 36px;
+    color: var(--txt-color-pink);
+}
+.contacts__left {
+    width: 540px;
+}
+
+/*Если необходимо будет поставить заголовок по центру*/
+
+/* .contacts__left--name {           
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} */
+.contacts__left-name--heading {
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 44px;
+    color: var(--txt-color-pink);
+}
+.contacts__left-description {
+    display: flex;
+    margin-bottom: 50px;
+}
+.contacts__left-description--p {
+    color: var(--txt-color-pink);
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 27px;
+}
+.contacts__full {
+    margin-bottom: 100px;
+    margin-top: 100px;
+}
+.footer__logo {
+    margin-right: 30px;
+}
+.footer__menu {
+    gap: 30px;
+}
+.footer__nav {
+    width: 170px;
+}
+.footer__contacts{
+    width: 170px;
+}
+.footer__adress {
+    width: 170px;
+}
+.footer__other {
+    width: 170px;
+}
+.footer__social {
+    width: 170px;
+}
+.fc {
+    flex-direction: column;
+}
+.footer a {
+    color: var(--txt-color-pink);
+    text-decoration: none;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 27px;
+}
+.container__sticky {
+    position: fixed;
+    /* top: 25px;
+    left: 1440px; */
+    z-index: 6;
+    top: 25px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.tabs {
+    justify-content: center;
+ }
+ 
+ /* Стили для списка вкладок */
+ .tab-header {
+    list-style: none;
+    padding-left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    margin-bottom: 20px;
+ }
+ 
+ /* Стили для вкладки */
+ .tab-header__item {
+    padding: 10px 20px;
+    margin-right: 5px;
+    cursor: pointer;
+    /* border: 1px solid var(--color-orange); */
+ }
+ 
+ /* Стили для активной вкладки */
+ .tab-header__item.active {
+    color: var(--txt-color-pink);
+    border-bottom: none;
+    position: relative;
+    border: 2px solid var(--color-orange);
+    border-radius: 6px;
+ }
+ 
+ /* Стиль для списка контейнеров с содержимым вкладок */
+ .tab-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+ }
+ 
+ /* Стили для контейнера с содержимым вкладки. По умолчанию скрыт. */
+ .tab-content__item {
+    display: none;
+    padding: 20px;
+    margin-top: -1px;
+ }
+ 
+ /* Стили для активного контейнера вкладки */
+ .tab-content__item.active {
+    display: block;
+ }
